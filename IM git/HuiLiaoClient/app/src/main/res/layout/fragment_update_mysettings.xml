@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/Update_MySettings_HeadId"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/head_id"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Update_MySettings_HeadId_CircleImageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/man_show_layer"/>
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+
+                <!--android:id="@+id/Update_MySettings_HeadId_CircleImageView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:scaleType="fitXY"-->
+
+                <!--circleimageview:civ_fill_color="@android:color/holo_blue_light"/>-->
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/Update_MySettings_Username"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/user_name"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:id="@+id/Update_MySettings_Username_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#a3a3a3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/Update_MySettings_NikeName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/nike_name"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <EditText
+                android:id="@+id/Update_MySettings_NikeName_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:textColor="#a3a3a3"
+                android:theme="@style/MyEditText"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/Update_MySettings_Sex"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/sex"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <EditText
+                android:id="@+id/Update_MySettings_Sex_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#a3a3a3"
+                android:theme="@style/MyEditText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/Update_MySettings_PhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/tel"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <EditText
+                android:id="@+id/Update_MySettings_PhoneNum_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#a3a3a3"
+                android:theme="@style/MyEditText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/Update_MySettings_Age"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/age"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <EditText
+                android:id="@+id/Update_MySettings_Age_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#a3a3a3"
+                android:inputType="number"
+                android:theme="@style/MyEditText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <RelativeLayout
+            android:id="@+id/Update_MySettings_Address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/address"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <EditText
+                android:id="@+id/Update_MySettings_Address_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#a3a3a3"
+                android:theme="@style/MyEditText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/Update_MySettings_Update_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/update_ok"
+            android:layout_marginTop ="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:background="#00BFFF"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

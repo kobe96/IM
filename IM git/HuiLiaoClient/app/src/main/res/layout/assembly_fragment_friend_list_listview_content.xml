@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop ="5dp"
+            android:id="@+id/Friend_List_View_Img"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Friend_List_View_Account"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Friend_List_View_NikeName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

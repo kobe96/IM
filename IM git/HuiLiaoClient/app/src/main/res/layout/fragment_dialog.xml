@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/fragment4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="0dp"
+        android:divider="#ffffff"
+        android:listSelector="@android:color/transparent"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="63dp">
+            <EditText
+                android:id="@+id/Message_Content_EditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:theme="@style/MyEditText"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+            <Button
+                android:id="@+id/Message_Send_Btn"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/send"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shape_corner_dialog_button"/>
+
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+Server端 接口文档README
+/*****************************************************Control**********************************************************/
+class Control                                                                                                           //控制器
+public String regAccountControl(@RequestBody String jsonParam)                                                          //注册账号控制
+public String loginAccountControl(@RequestBody String jsonParam)                                                        //登录账号控制
+public String insertFriendControl(@RequestBody String jsonParam)                                                        //添加新好友
+
+
+
+/*****************************************************Service**********************************************************/
+
+class Service                                                                                                           //服务层
+public String regAccountService(String account,String password)                                                         //注册账号服务，String regAccountControl调用
+返回值：reg_Succeed                                                                                                     //注册成功
+        reg_Account_Exist_Fail                                                                                          //注册失败
+
+public String loginAccountService(String account,String password)                                                       //登录账号服务，String loginAccountControl调用
+返回值：login_Succeed                                                                                                   //登陆成功
+        password_Error_Fail                                                                                             //密码错误
+        null_Account_Fail                                                                                               //不存在用户
+
+public String insertFriendService(String account,String friendAccount,String reName)
+返回值：friend_Exist                                                                                                    //朋友存在
+        insert_Friend_Succeed                                                                                           //插入成功
+        account_Not_Exist                                                                                               //账号不存在
+
+ public String searchFriendService(String SearchAccount)
+ 返回值：JSON{  "message": "isNull" }                                                                                   //不存在
+         JSON{  "message": "Succeed"                                                                                    //存在，成功,格式如下
+                "accounts":[
+                                {"account" :xxxx},
+                                {"account" :xxxx}
+                            ]
+              }
+
+/*****************************************************Interface********************************************************/
+
+Interface UserMapper                                                                                                    //UserMapper接口
+void reg_Usr(String account,String password);                                                                           //添加账号insert语句，regAccountService调用
+Integer chk_Usr(String account_this);                                                                                   //判断是否重复Select语句，regAccountService调用
+List<String> get_Account(String account);                                                                               //查询账号列表
+
+Interface PasswordChkMapper                                                                                             //PasswordChkMapper接口
+void reg_Password_Chk(String account,String password);                                                                  //注册登录账号密码，regAccountService调用
+String login_Password_Chk(String account);                                                                              //登录，为loginAccountService调用
+
+Interface OfflineMessage
+void ins_OfflineMessage(String account,String recAccount,String message);                                               //插入离线消息
+
+Interface FriendList
+void ins_Friend(String account,String friendAccount,String reName);                                                     //朋友关系表
+Integer chk_Friend(String accountThis,String friendAccount);                                                                                 //是否已经是好友关系了
+
+
+
+
+

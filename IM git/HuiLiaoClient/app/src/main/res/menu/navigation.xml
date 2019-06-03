@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_recent_message"
+        android:icon="@drawable/message_navigate"
+        android:title="@string/recent_message" />
+
+    <item
+        android:id="@+id/navigation_friend"
+        android:icon="@drawable/friend_navigate"
+        android:title="@string/friend" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@mipmap/find_navigate"
+        android:title="@string/find" />
+
+</menu>
